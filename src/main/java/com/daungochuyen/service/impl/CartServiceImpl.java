@@ -47,7 +47,7 @@ public class CartServiceImpl implements CartService {
 	
 	/*
 	 * Get all products in cart
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@Override
@@ -77,7 +77,7 @@ public class CartServiceImpl implements CartService {
 
 	/*
 	 * Add product to cart
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@Override
@@ -110,7 +110,7 @@ public class CartServiceImpl implements CartService {
 
 	/*
 	 * Return cart size
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@Override

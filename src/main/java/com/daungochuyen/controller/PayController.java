@@ -16,7 +16,7 @@ import com.daungochuyen.service.PayService;
 
 /**
  * Payment manager controller
- * Created by: NPTAN
+ * Created by: ADMIN
  * Version: 1.0
  */
 @RestController
@@ -30,7 +30,7 @@ public class PayController {
 	
 	/*
 	 * Clear cart after payment success
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@PostMapping()

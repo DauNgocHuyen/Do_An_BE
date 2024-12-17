@@ -34,7 +34,7 @@ public class AdminProductServiceimpl implements AdminProductService {
 	
 	/*
 	 * Get alls product
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@Override
@@ -48,7 +48,7 @@ public class AdminProductServiceimpl implements AdminProductService {
 	
 	/*
 	 * Add new product
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@Override
@@ -75,7 +75,7 @@ public class AdminProductServiceimpl implements AdminProductService {
 	
 	/*
 	 * Delete product by id
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@Override

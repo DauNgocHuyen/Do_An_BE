@@ -32,7 +32,7 @@ import lombok.RequiredArgsConstructor;
 
 /**
  * Product manager controller
- * Created by: NPTAN
+ * Created by: ADMIN
  * Version: 1.0
  */
 @RestController
@@ -57,14 +57,14 @@ public class ProductController {
 	
 	/*
 	 * Get all
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@GetMapping()
 	public ResponseEntity<Page<ProductDTO>> getAllProducts(
 		ProductCriteria criteria,
 		@RequestParam(name = "page", defaultValue = "0") int page,
-        @RequestParam(name = "size", defaultValue = "9") int size
+        @RequestParam(name = "size", defaultValue = "12") int size
 	) {
 		Pageable pageable = PageRequest.of(page, size);
         Page<ProductDTO> result = productService.getAll(criteria, pageable);
@@ -94,7 +94,7 @@ public class ProductController {
 	
 	/*
 	 * Get product by id
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@GetMapping("/{id}")

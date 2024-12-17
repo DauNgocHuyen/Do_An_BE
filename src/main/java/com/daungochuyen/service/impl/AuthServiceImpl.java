@@ -45,7 +45,7 @@ public class AuthServiceImpl implements AuthService {
 
 	/*
 	 * Check login
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@Override
@@ -79,7 +79,7 @@ public class AuthServiceImpl implements AuthService {
 	
 	/*
 	 * Register new account
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@Override
@@ -102,7 +102,7 @@ public class AuthServiceImpl implements AuthService {
 	
 	/*
 	 * Logout service
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@Override

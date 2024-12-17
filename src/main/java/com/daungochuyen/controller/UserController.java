@@ -56,7 +56,7 @@ public class UserController {
 
 	/*
 	 * Get alls
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@GetMapping("/users")
@@ -134,7 +134,7 @@ public class UserController {
 	
 	/*
 	 * Get user by id
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@GetMapping("/users/{id}")
@@ -147,7 +147,7 @@ public class UserController {
 	
 	/*
 	 * Update user with id
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@PutMapping("/users/{id}")
@@ -159,7 +159,7 @@ public class UserController {
 	
 	/*
 	 * Delete user by id
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@DeleteMapping("/users/{id}")

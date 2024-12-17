@@ -18,7 +18,7 @@ import com.daungochuyen.service.admin.AdminProductService;
 
 /**
  * Page manager controller
- * Created by: NPTAN
+ * Created by: ADMIN
  * Version: 1.0
  */
 @RestController
@@ -42,7 +42,7 @@ public class HomeController {
 	
 	/*
 	 * View home (get list product)
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@GetMapping("/")
@@ -56,7 +56,7 @@ public class HomeController {
 	
 	/*
 	 * View login 
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@GetMapping("auth/login")
@@ -67,7 +67,7 @@ public class HomeController {
 	
 	/*
 	 * View register 
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@GetMapping("auth/register")
@@ -78,7 +78,7 @@ public class HomeController {
 	
 	/*
 	 * View product manager
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@GetMapping("/admin-product")
@@ -89,7 +89,7 @@ public class HomeController {
 	
 	/*
 	 * View add new product
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@GetMapping("/admin/add-product")
@@ -100,7 +100,7 @@ public class HomeController {
 	
 	/*
 	 * View import list product
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@GetMapping("/admin/add-list")
@@ -111,7 +111,7 @@ public class HomeController {
 	
 	/*
 	 * View product detail
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@GetMapping("/detail")
@@ -125,7 +125,7 @@ public class HomeController {
 	
 	/*
 	 * View list product in cart
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 //	@GetMapping("/list-cart")
@@ -138,7 +138,7 @@ public class HomeController {
 	
 	/*
 	 * View add new discount
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@GetMapping("/admin/add-discount")
@@ -149,7 +149,7 @@ public class HomeController {
 	
 	/*
 	 * View online payment (VNPay)
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@GetMapping("/payment")
@@ -160,7 +160,7 @@ public class HomeController {
 	
 	/*
 	 * View return online payment
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@GetMapping("/vnpay_return")

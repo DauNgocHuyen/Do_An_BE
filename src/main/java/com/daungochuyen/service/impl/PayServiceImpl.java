@@ -57,7 +57,7 @@ public class PayServiceImpl implements PayService{
 	
 	/*
 	 * Payment bill -> Clear cart
-	 * Created by: NPTAN
+	 * Created by: ADMIN
 	 * Version: 1.0
 	 */
 	@Override
