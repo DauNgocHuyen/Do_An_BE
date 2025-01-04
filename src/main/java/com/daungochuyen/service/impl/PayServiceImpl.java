@@ -61,7 +61,16 @@ public class PayServiceImpl implements PayService{
 	 * Version: 1.0
 	 */
 	@Override
-	public void payment(PaymentRequest paymentRequest, String token) {
+	public void payment(PaymentRequest paymentRequest, String token) throws Exception {
+		//Check quantity product in DB
+		List<ProductItem> productPaymentDTOs = paymentRequest.getProductInfo();
+		for(ProductItem productItem : productPaymentDTOs) {
+			Product product = productRepository.getById(productItem.getProductId());
+			if(product.getQuantity() < productItem.getQuanitySelected()) {
+				throw new Exception("Product quantity is not enough!"); 
+			}
+		}
+		
 		Long userId = jwtTokenProvider.getUserIdFromJWT(token);
 		
 		// Create order details
@@ -84,7 +93,7 @@ public class PayServiceImpl implements PayService{
 		orderDetail = orderDetailRepository.save(orderDetail);
 		
 		// Create product order (product & quantity)
-		List<ProductItem> productPaymentDTOs = paymentRequest.getProductInfo();
+//		List<ProductItem> productPaymentDTOs = paymentRequest.getProductInfo();
 		for(ProductItem product : productPaymentDTOs) {
 			ProductOrder productOrder = new ProductOrder();
 			productOrder.setOrderDetailId(orderDetail.getId());

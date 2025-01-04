@@ -11,6 +11,7 @@ public interface PayService {
 	/**
 	 * Payment bill
 	 * @param request
+	 * @throws Exception 
 	 */
-	void payment(PaymentRequest paymentRequest, String token);
+	void payment(PaymentRequest paymentRequest, String token) throws Exception;
 }

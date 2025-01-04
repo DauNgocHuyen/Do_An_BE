@@ -34,7 +34,7 @@ public class PayController {
 	 * Version: 1.0
 	 */
 	@PostMapping()
-	public ResponseEntity<?> payment(@RequestBody PaymentRequest paymentRequest, HttpServletRequest request) {
+	public ResponseEntity<?> payment(@RequestBody PaymentRequest paymentRequest, HttpServletRequest request) throws Exception {
 		String token = JwtAuthenticationFilter.getJwtFromRequest(request);
 		payService.payment(paymentRequest, token);
 		return ResponseEntity.noContent().build();
