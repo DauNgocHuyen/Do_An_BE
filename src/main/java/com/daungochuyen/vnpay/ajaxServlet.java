@@ -153,7 +153,13 @@ public class ajaxServlet extends HttpServlet {
         }
         
         // Payment successful -> create order
-        payService.payment(paymentRequest, Config.token);
+        try {
+			payService.payment(paymentRequest, Config.token);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
         
         String queryUrl = query.toString();
         String vnp_SecureHash = Config.hmacSHA512(Config.vnp_HashSecret, hashData.toString());

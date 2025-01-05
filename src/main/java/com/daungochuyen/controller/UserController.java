@@ -114,7 +114,7 @@ public class UserController {
 				() -> new UsernameNotFoundException("User id invalid.")
 		);
 		
-		Path staticPath = Paths.get("E:\\PTIT\\DO AN\\Code\\Code\\furniture-store-fe\\Furniture-Store-FE\\src\\assets\\imgs");
+		Path staticPath = Paths.get("E:\\PTIT\\DO_AN_FINAL\\Code_final\\Do_An_FE\\src\\assets\\imgs");
         Path imagePath = Paths.get("");
         if (!Files.exists(CURRENT_FOLDER.resolve(staticPath).resolve(imagePath))) {
             Files.createDirectories(CURRENT_FOLDER.resolve(staticPath).resolve(imagePath));

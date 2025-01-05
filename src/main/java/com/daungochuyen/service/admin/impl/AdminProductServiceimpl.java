@@ -53,7 +53,7 @@ public class AdminProductServiceimpl implements AdminProductService {
 	 */
 	@Override
 	public Product addNewProduct(String name, Long price, Long quantity, Long categoryId, MultipartFile multipartFile) throws IOException {
-		Path staticPath = Paths.get("E:\\PTIT\\DO AN\\Code\\Code\\furniture-store-fe\\Furniture-Store-FE\\src\\assets\\imgs"); // src/main/resources/static/img
+		Path staticPath = Paths.get("E:\\PTIT\\DO_AN_FINAL\\Code_final\\Do_An_FE\\src\\assets\\imgs"); // src/main/resources/static/img
         Path imagePath = Paths.get("");
         if (!Files.exists(CURRENT_FOLDER.resolve(staticPath).resolve(imagePath))) {
             Files.createDirectories(CURRENT_FOLDER.resolve(staticPath).resolve(imagePath));
